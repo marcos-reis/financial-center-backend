@@ -1,7 +1,7 @@
 {
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsc",    
+    "build": "npx tsc",    
     "start": "node dist/main/index.js",
     "dev": "ts-node-dev --respawn --transpile-only src/main/index.ts"
   },
