@@ -1,7 +1,10 @@
 {
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npx tsc",    
+    "build": "yarn clean && yarn tsc",    
     "start": "node dist/main/index.js",
     "dev": "ts-node-dev --respawn --transpile-only src/main/index.ts"
   },
