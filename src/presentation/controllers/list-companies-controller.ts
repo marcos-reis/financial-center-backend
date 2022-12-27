@@ -1,4 +1,4 @@
-import { Controller } from "../controller"
+import { Controller } from "../interfaces"
 
 export class ListCompaniesController implements Controller{
    async handle (req:Controller.Input):Promise<Controller.Output> {
