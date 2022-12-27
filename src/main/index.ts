@@ -1,6 +1,6 @@
 import express from "express"
+import setupRoutes from "./config/routes"
 const app = express()
 const PORT = 3000
-app.get("/",(_,res)=>res.send("Hello World!"))
-app.get("/health", (_,res)=>res.sendStatus(200))
+setupRoutes(app)
 app.listen( PORT , () => { console.log(`Listening on port ${ PORT }`) })
